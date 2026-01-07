@@ -55,6 +55,11 @@ public class StudentServices {
 
         return existing;
     }
+    //Put add all students
+    public List<Student> addAllStudents(List<Student> students){
+        this.students.addAll(students);
+        return students;
+    }
 
     //Delete student
     public void deleteStudent(Long id){
