@@ -14,6 +14,9 @@ public interface StudentService {
     // Get student by ID
     Optional<Student> getStudentById(Long studentId);
 
+    //Get student by name
+    Student getStudentByName (String name);
+
     // Update student
     Student updateStudent(Long studentId, Student student);
 

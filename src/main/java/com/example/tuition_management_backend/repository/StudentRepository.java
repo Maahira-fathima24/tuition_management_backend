@@ -18,4 +18,9 @@ StudentRepository extends JpaRepository<Student, Long> {
 
     // Check if phone number already exists
     boolean existsByPhone(String phone);
+
+    //find students by name
+    Student findByName(String name);
+
+
 }

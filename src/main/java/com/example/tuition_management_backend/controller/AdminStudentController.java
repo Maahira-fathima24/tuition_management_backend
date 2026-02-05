@@ -29,6 +29,11 @@ public class AdminStudentController {
         return studentService.getStudentById(id);
     }
 
+    //Get students by name
+    @GetMapping("/name/{name}")
+    public Student getStudentByName(@PathVariable String name){
+        return studentService.getStudentByName(name);
+    }
     //Add a new Student
     @PostMapping
     public Student addStudent (@RequestBody Student student){
